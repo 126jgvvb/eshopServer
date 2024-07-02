@@ -1,0 +1,1 @@
+{"version":3,"file":"authorize.config.js","sourceRoot":"","sources":["authorize.config.ts"],"names":[],"mappings":";;AACA,2CAA4C;AAE5C,kBAAe,IAAA,mBAAU,EAAC,WAAW,EAAC,GAAE,EAAE,CAAA,CAAC;IACvC,UAAU,EAAC,OAAO,CAAC,GAAG,CAAC,sBAAsB;IAC7C,cAAc,EAAC,OAAO,CAAC,GAAG,CAAC,yBAAyB;IACpD,WAAW,EAAC,OAAO,CAAC,GAAG,CAAC,qBAAqB;CAChD,CAAC,CAAC,CAAA"}

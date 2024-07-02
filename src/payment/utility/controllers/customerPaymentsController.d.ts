@@ -1,0 +1,10 @@
+export function captureFundsAuthorizedThroughAnotherChannel(req: any, resp: any): void;
+export function capturePreviouslyAuthorizedAmount(req: any, resp: any): void;
+export function chargeCreditCard(req: any, resp: any): void;
+export function chargeCustomerProfile(req: any, resp: any): void;
+export function chargeTokenizedCreditCard(req: any, resp: any): void;
+export function createChasePayTransaction(req: any, resp: any): void;
+export function creditBankAccount(req: any, resp: any): void;
+export function refundTransaction(req: any, resp: any): void;
+export function updatedSplitTenderGroup(req: any, resp: any): void;
+export function voidTransaction(req: any, resp: any): void;

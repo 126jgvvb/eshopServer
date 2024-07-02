@@ -1,0 +1,11 @@
+{
+    "cardDetails":{
+        "cardNumber":"4007000000027",
+        "cardCode":"1234",
+        "expiryDate":"0824"
+    },
+    "invoice":"INV-012",
+    "description":"this is a test",
+    "authCode":"0",
+    "amount":"20000"
+}

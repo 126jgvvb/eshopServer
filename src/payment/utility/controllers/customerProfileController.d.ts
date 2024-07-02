@@ -1,0 +1,17 @@
+export function createCustomerProfile(req: any, resp: any): void;
+export function createCustomerPaymentProfile(req: any, resp: any): void;
+export function createCustomerProfileFromTransaction(req: any, resp: any): void;
+export function createCustomerShippingAddress(req: any, resp: any): void;
+export function deleteCustomerPaymentProfile(req: any, resp: any): void;
+export function deleteCustomerProfile(req: any, resp: any): void;
+export function deleteCustomerShippingAddress(req: any, resp: any): void;
+export function deleteCustomerPaymentProfileList(req: any, resp: any): void;
+export function getCustomerPaymentProfile(req: any, resp: any): void;
+export function getCustomerProfileIDs(resp: any): void;
+export function getCustomerProfile(req: any, resp: any): void;
+export function getCustomerShippingAddress(req: any, resp: any): void;
+export function updateCustomerPaymentProfile(req: any, resp: any): void;
+export function updateCustomerProfile(req: any, resp: any): void;
+export function updateCustomerShippingAddress(req: any, resp: any): void;
+export function validateCustomerPaymentProfile(req: any, resp: any): void;
+export function getHostedProfilePage(req: any, resp: any): void;

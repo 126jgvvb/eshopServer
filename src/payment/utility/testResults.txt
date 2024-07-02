@@ -1,0 +1,155 @@
+-------createCustomerProfile----------
+{
+"firstName":"morgan",
+"lastName":"delos",
+"Address":"7802",
+"state":"uganda",
+"zip":"46225",
+"country":"uganda",
+"phoneNumber":"0741882818",
+"city":"kampala",
+"cardNo":"4007000000027",
+"expiryDate":"0824",
+"description":"this is a test",
+"email":"wadiakevin@gmail.com",
+"merchantID":"1234",
+"ID":"518816323"
+}
+===========>result:profileID:518816396
+"this ID when used in on [createCustomerPaymentProfile] is considered a duplicate...as if it already exists.
+yet a new ID is considered as a record not found"
+
+-------------------------customer details from transaction--------------------------
+{
+    "cardDetails":{
+    "cardNumber":"4007000000027",
+    "expiryDate":"0824",
+    "cardCode":"1234"
+    },
+    "orderDetails":{
+        "invoice":"IN-2345",
+        "description":"this is a decsription"
+    },
+    "taxDetails":{
+        "amount":"1200",
+        "name":"pay as you go",
+        "description":"this is a  sample test"
+    },
+    "dutyDetails":{
+        "amount":"5000",
+        "name":"Duty test",
+        "description":"this is a  sample test"
+    },
+    "shippingDetails":{
+        "amount":"3000",
+        "name":"shipping test",
+        "description":"this is a  sample test"
+    },
+    "billTo":{
+        "firstName":"coded",
+        "lastName":"kevin",
+        "description":"chargedMatrix",
+        "address":"bweyos kitintale",
+        "city":"kampala",
+        "state":"uganda",
+        "zip":"46225",
+        "country":"uganda"
+    },
+    "shipTo":{
+        "firstName":"morgan",
+        "lastName":"back",
+        "description":"chargedMatrix",
+        "address":"bweyos kira",
+        "city":"kampala",
+        "state":"uganda",
+        "zip":"46225",
+        "country":"uganda"
+    },
+    "items":[
+        {
+            "id":"we12df4ge45f43",
+            "name":"corn",
+            "description":"customer item one",
+            "quantity":"2",
+            "price":"12000"
+        },
+        {
+            "id":"we1e4r5545f43",
+            "name":"berries",
+            "description":"customer item two",
+            "quantity":"2",
+            "price":"12000"
+        }
+    ],
+    "userFields":[{
+        "name":"filedOne",
+        "value":"9.5"
+    }],
+    "transactionSettings":[{
+        "name":"recurringBilling",
+        "value":"false"
+    }]
+
+}
+
+result ode:0 (its not real transfer),but successfull
+
+
+
+---------------------------------------createCustomerShippingAddress---------------------------------
+{
+    "shippingToObject":{
+        "firstName":"test",
+        "lastName":"scenario",
+        "address":"12 Main street",
+        "city":"orchard",
+        "state":"wA",
+        "zip":"98002",
+        "country":"USA",
+        "phoneNumber":"000-000-000",
+        "profileID":"518816396"
+    }
+}
+
+
+RESULT:::{
+    "messages": {
+        "resultCode": "Error",
+        "message": [
+            {
+                "code": "E00003",
+                "text": "The element 'createCustomerShippingAddressRequest' in namespace 'AnetApi/xml/v1/schema/AnetApiSchema.xsd' has invalid child element 'address' in namespace 'AnetApi/xml/v1/schema/AnetApiSchema.xsd'. List of possible elements expected: 'refId, customerProfileId' in namespace 'AnetApi/xml/v1/schema/AnetApiSchema.xsd'."
+            }
+        ]
+    }
+}
+--------->As if the address details are not expected
+
+
+
+
+----------------------------------------------------------------capture previuously authorized tnx----------------------------
+{
+    "invoice":"INV-012",
+    "description":"this is a test",
+    "transactionID":"67895430"
+}
+
+
+RESULT:::the code was not valid
+
+
+-------------------------------------------------capture trxn thru another channel------------------------------------
+{
+    "cardDetails":{
+        "cardNumber":"4007000000027",
+        "cardCode":"1234",
+        "expiryDate":"0824"
+    },
+    "invoice":"INV-012",
+    "description":"this is a test",
+    "authCode":"0",
+    "amount":"20000"
+}
+
+RESULT:::::successfull,trxnCode 0

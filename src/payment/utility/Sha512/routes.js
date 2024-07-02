@@ -1,0 +1,1 @@
+const AuthAPI=require('./eshopPayment/test-runner.js');
